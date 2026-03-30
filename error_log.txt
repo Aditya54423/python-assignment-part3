@@ -1,0 +1,14 @@
+[2026-03-25 19:23:22] ERROR in fetch_products: Exception - <built-in function id>
+[2026-03-26 10:12:28] ERROR in fetch_products: Exception - <built-in function id>
+[2026-03-26 10:12:29] ERROR in post_product: Exception - module 'requests' has no attribute 'posts'
+[2026-03-26 10:13:52] ERROR in fetch_products: Exception - <built-in function id>
+[2026-03-26 11:21:57] ERROR in fetch_products: Exception - <built-in function id>
+[2026-03-26 11:21:58] ERROR in post_product: Exception - module 'requests' has no attribute 'postmodules'
+[2026-03-26 17:40:17] ERROR in fetch_products: Exception - <built-in function id>
+[2026-03-26 17:40:18] ERROR in post_product: Exception - module 'requests' has no attribute 'postmodules'
+[2026-03-26 17:47:07] ERROR in fetch_products: Exception - <built-in function id>
+[2026-03-26 17:47:07] ERROR in post_product: Exception - module 'requests' has no attribute 'postmodules'
+[2026-03-26 18:20:07] ERROR in fetch_products: ConnectionError - No connection could be made
+[2026-03-26 18:20:12] ERROR in lookup_product: Exception - HTTPSConnectionPool(host='dummyjson.com', port=443): Read timed out. (read timeout=5)
+[2026-03-26 18:28:16] ERROR in fetch_products: ConnectionError - No connection could be made
+[2026-03-26 18:28:18] ERROR in lookup_product: HTTPError - 404 Not Found for product ID 999
