@@ -1,0 +1,143 @@
+==================================================
+    TASK 1: FILE READ & WRITE
+==================================================
+
+ File written successfully.
+  Lines added or appended.
+
+ [Reading file back : Numbered lines]
+ 1 . Topic 1 : Variables store data.Python is dynamically typed.
+ 2 . Topic 2 : Lists are ordered and mutable.
+ 3 . Topic 3 : Dictionaries store key-value pairs.
+ 4 . Topic 4 : Loops automate repetitive tasks.
+ 5 . Topic 5 : Exception handling prevents crashes.
+ 6 . Topic 6 : Functions help break code into reusable chunks.
+ 7 . Topic 7 : Modules let you import and reuse code across files.
+
+ Total lines in file : 7
+
+ Enter a keyword to search for: Functions
+
+ Lines containing 'Functions' :
+  -> Topic 6 : Functions help break code into reusable chunks.
+
+
+==================================================
+  TASK 2 : API INTEGRATION
+==================================================
+
+ [Fetching 20 products from DummyJSON....]
+
+ID  | Title                          | Category      |    Price| Rating
+ ----------------------------------------------------------------------
+1   | Essence Mascara Lash Princess  | beauty        | $   9.99 |   2.56
+2   | Eyeshadow Palette with Mirror  | beauty        | $  19.99 |   2.86
+3   | Powder Canister                | beauty        | $  14.99 |   4.64
+4   | Red Lipstick                   | beauty        | $  12.99 |   4.36
+5   | Red Nail Polish                | beauty        | $   8.99 |   4.32
+6   | Calvin Klein CK One            | fragrances    | $  49.99 |   4.37
+7   | Chanel Coco Noir Eau De        | fragrances    | $ 129.99 |   4.26
+8   | Dior J'adore                   | fragrances    | $  89.99 |    3.8
+9   | Dolce Shine Eau de             | fragrances    | $  69.99 |   3.96
+10  | Gucci Bloom Eau de             | fragrances    | $  79.99 |   2.74
+11  | Annibale Colombo Bed           | furniture     | $1899.99 |   4.77
+12  | Annibale Colombo Sofa          | furniture     | $2499.99 |   3.92
+13  | Bedside Table African Cherry   | furniture     | $ 299.99 |   2.87
+14  | Knoll Saarinen Executive Confe | furniture     | $ 499.99 |   4.88
+15  | Wooden Bathroom Sink With Mirr | furniture     | $ 799.99 |   3.59
+16  | Apple                          | groceries     | $   1.99 |   4.19
+17  | Beef Steak                     | groceries     | $  12.99 |   4.47
+18  | Cat Food                       | groceries     | $   8.99 |   3.13
+19  | Chicken Meat                   | groceries     | $   9.99 |   3.19
+20  | Cooking Oil                    | groceries     | $   4.99 |    4.8
+
+ [Products with rating >= 4.5,sorted by price ,high to low ]
+
+ Title                            |    Price | Rating
+ -------------------------------------------------------
+Annibale Colombo Bed             | $1899.99|  4.77
+Knoll Saarinen Executive Confere | $ 499.99|  4.88
+Powder Canister                  | $  14.99|  4.64
+Cooking Oil                      | $   4.99|   4.8
+
+[Fetching Laptops category....]
+
+Laptop                              |     Price
+ ------------------------------------------------
+ Apple MacBook Pro 14 Inch Space Gre | $ 1999.99
+ Asus Zenbook Pro Dual Screen Laptop | $ 1799.99
+ Huawei Matebook X Pro               | $ 1399.99
+ Lenovo Yoga 920                     | $ 1099.99
+ New DELL XPS 13 9300 Laptop         | $ 1499.99
+
+ [Sending POST request to add a product .....]
+
+✓ POST response:
+{'id': 195, 'title': 'My Custom Product', 'price': 999, 'description': 'A product I created via API', 'category': 'electronics'}
+
+
+==================================================
+ TASK 3: EXCEPTION HANDLING
+==================================================
+
+ [Part A safe_divide tests]
+ safe_divide(10,2)  ->5.0
+  safe_divide(10,0)  ->Error: Cannot divide by zero
+ safe_divide(ten,2)  ->Error : Invalid input types
+
+ [ Part B - read_file_safe tests]
+
+ -> Reading 'python notes.txt':
+ File read operation attempt complete.
+(first 60 chars) Topic 1 : Variables store data.Python is dynamically typed.
+....
+
+  -> Reading 'ghost_file.txt' : 
+ Error: File 'ghost_file.txt' not found.
+ File read operation attempt complete.
+
+[PART C - Robust API calls already applied throughout Task 2.]
+
+ [PART D Product ID Lookup Loop]
+ (type 'quit' to exit)
+
+Enter a product ID (1-100), or 'quit' to exit23
+ Eggs - $2.99
+
+Enter a product ID (1-100), or 'quit' to exit 33
+ Mulberry - $4.99
+
+Enter a product ID (1-100), or 'quit' to exit  56
+ Electric Stove - $49.99
+
+Enter a product ID (1-100), or 'quit' to exit 67
+ Mug Tree Stand - $15.99
+
+Enter a product ID (1-100), or 'quit' to exit quit
+  Exititng Lookup
+
+
+==================================================
+    TASK 4: LOGGING TO FILE
+==================================================
+
+ [Trigger 1 ConnectionError via bad URL]
+ Connection failed.Please check your internet connection.
+ [logged] [2026-04-02 10:55:40] ERROR in fetch_products: ConnectionError - No connection could be made
+
+ [Trigger 2 - HTTP 404 for product ID 999]
+ [logged] [2026-04-02 10:55:40] ERROR in lookup_product: HTTPError - 404 Not Found for product ID 999
+ ProductID 999 not found(status404).
+
+ [Contents of error_log.txt]
+ --------------------------------------------------
+ File read operation attempt complete.
+[2026-04-01 07:59:01] ERROR in fetch_products: ConnectionError - No connection could be made
+[2026-04-01 07:59:02] ERROR in lookup_product: HTTPError - 404 Not Found for product ID 999
+[2026-04-02 10:55:40] ERROR in fetch_products: ConnectionError - No connection could be made
+[2026-04-02 10:55:40] ERROR in lookup_product: HTTPError - 404 Not Found for product ID 999
+
+==================================================
+  ALL TASKS COMPLETE
+==================================================
+
